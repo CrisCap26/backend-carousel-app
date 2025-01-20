@@ -13,8 +13,10 @@ class FilesService {
          * Subir 3 niveles desde `app.service.js` 
          * hasta llegar al Directorio donde esta carousel-app  
          */
+        //dev
         const rutaDirectorio = path.posix.join(__dirname, '..', '..', '..', 'carousel-app', 'dist');
-
+        //prod
+        //const rutaDirectorio = path.posix.join(__dirname, '..', '..', '..', 'carrusel');
         const rutaDecodificada = decodeURIComponent(rutaDirectorio).slice(1);
         //this.directoryPath = 'C:/Users/Cris H/Documents/viteProjects/carousel-app/public';
         this.directoryPath = `${rutaDecodificada}`;
